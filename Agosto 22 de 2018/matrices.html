@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matrices</title>
+</head>
+<body>
+    <script>
+      var matriz = ['lunes', 'martes', 'miercoles'];
+    //   matriz.push('Jueves');
+    //   matriz.unshift('domingo');
+
+    //   ;
+    
+      
+    //   console.log("Es una matriz?", Array.isArray(matriz));
+      
+
+      
+    //   console.log(matriz.pop());
+    //   console.log(matriz[0]);
+
+     matriz.splice(1,1, 'valor', 'valor2', 'valor 3');
+     matriz.forEach(function(valor, index){
+         console.log('elemento', valor, index);
+     });
+
+     matriz.forEach( (valor, index) => {
+         console.log('elemento', valor, index)
+        }
+     );
+      
+
+     console.log(matriz);
+      
+       
+    </script>
+</body>
+</html>

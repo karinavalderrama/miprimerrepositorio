@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trello</title>
+    <style>
+        body{
+            background-color: rgb(101, 175, 255);
+        }
+        .ocultar {
+            display: none;
+            background-color: #cecece;
+            width: 200px;
+        }
+        .agregar-lista {
+            padding: 20px;
+            background-color: rgba(128, 128, 128, 0.598);
+            user-select: none;
+        }
+        .agregar-lista:hover {
+            padding: 20px;
+            background-color: rgba(128, 128, 128, 0.831);
+        }
+        .display-block{
+            display: block;
+        }
+        /* .texto-lista{
+            width: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <span class="agregar-lista" id="agregar-lista"> + Añada una lista</span>
+    <div class="ocultar" id="formularioLista">
+        <input type="text" name="name" placeholder="Introduzca el título de la lista..."  class="texto-lista">
+        
+        <div>
+            <input type="submit" value="Añadir lista" >
+            <a href="#">X</a>
+        </div>
+    </div>
+    <script>
+        var formularioLista = document.getElementById('formularioLista');
+       var agregarLista =  document.getElementById('agregar-lista');
+
+         agregarLista.addEventListener('click', function() {
+            formularioLista.classList.remove('ocultar');
+       });
+    </script>
+</body>
+
+</html>
